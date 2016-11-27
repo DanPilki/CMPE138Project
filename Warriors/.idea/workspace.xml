@@ -87,8 +87,8 @@
       <file leaf-file-name="home.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="56" />
+            <state relative-caret-position="243">
+              <caret line="122" column="54" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -529,12 +529,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480208727598</updated>
       <workItem from="1480208728820" duration="56000" />
-      <workItem from="1480208801962" duration="11236000" />
+      <workItem from="1480208801962" duration="11390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11292000" />
+    <option name="totallyTimeSpent" value="11446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -719,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="56" />
+        <state relative-caret-position="243">
+          <caret line="122" column="54" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
