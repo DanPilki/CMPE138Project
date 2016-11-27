@@ -17,7 +17,7 @@
 
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -27,7 +27,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#Home">Go Dubs!</a>
+        <a class="navbar-brand" href="#home">Go Dubs!</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -117,7 +117,7 @@
   </div>
 
   <footer class="container-fluid text-center">
-    <a href="#Home" title="To Top">
+    <a href="#home" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
     <p>Made by Phi Nguyen, Dan Pilkington, Daniel Soto, & Previn Wong </p>
@@ -127,10 +127,8 @@
     $(document).ready(function(){
       // Add smooth scrolling to all links in navbar + footer link
       $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
         // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-
+        if (this.hash !== ""){
           // Prevent default anchor click behavior
           event.preventDefault();
 
