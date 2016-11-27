@@ -70,114 +70,46 @@ h2{
     width: 33.3%;
 }
 #c1{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
-
-
-
 }
 #c2{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6475.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
-
-
 }
-#deltatau{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
-
-
-
+#c3{
 }
 #c4{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6589.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
-
 }
 #c5{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2016.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
-
-
 }
 #c6{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2386.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c7{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2489785.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c8{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064559.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c9{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2393.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c10{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3155535.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c11{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2594818.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c12{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3137730.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c13{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3452.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c14{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2177.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 #c15{
-    background-image: url("http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2419.png&w=350&h=254");
-    background-position: center center;
-    background-repeat: no-repeat;
     margin-top: 50px;
-
 }
 
 .slideanim {visibility:hidden;}
