@@ -1,5 +1,14 @@
 <table>
 	<tr>
-		<th>First Name</th>
+	  <th>First Name</th>
+	  
 	<tr>
 </table>
+
+<tbody>
+  <% @Players.each do Players| &>
+  <tr>
+    <td><%=Players.F_name %></td>
+  <tr>
+    <%end%>
+    </tbody>
