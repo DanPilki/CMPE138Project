@@ -1,0 +1,149 @@
+.jumbotron {
+    background-image: url("http://assets.bwbx.io/images/users/iqjWHBFdfxIU/i4z4EzMsnrjk/v5/-1x-1.jpg");
+    background-size: cover;
+    color: white;
+    padding: 100px 25px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: navy;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+#gsw{
+    margin-top: 160px;
+    font-size: 90px;
+    font-family: Montserrat, sans-serif;
+}
+
+#oak{
+    margin-bottom: 200px;
+    font-size: 35px;
+    font-family: Montserrat, sans-serif;
+}
+
+footer .glyphicon{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+    font-family: Montserrat, sans-serif;
+}
+
+h2{
+    font-family: Montserrat, sans-serif;
+    color: navy;
+    font-size: 50px;
+}
+
+
+.col-sm-4{
+    height: 254px;
+    width: 33.3%;
+}
+#c1{
+}
+#c2{
+}
+#c3{
+}
+#c4{
+    margin-top: 50px;
+}
+#c5{
+    margin-top: 50px;
+}
+#c6{
+    margin-top: 50px;
+}
+#c7{
+    margin-top: 50px;
+}
+#c8{
+    margin-top: 50px;
+}
+#c9{
+    margin-top: 50px;
+}
+#c10{
+    margin-top: 50px;
+}
+#c11{
+    margin-top: 50px;
+}
+#c12{
+    margin-top: 50px;
+}
+#c13{
+    margin-top: 50px;
+}
+#c14{
+    margin-top: 50px;
+}
+#c15{
+    margin-top: 50px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+a.d1:hover{
+    opacity: 0.5;
+
+}
+
