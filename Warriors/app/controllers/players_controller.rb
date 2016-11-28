@@ -1,4 +1,5 @@
 class PlayersController < ApplicationController
-  def players
+  def sc
+
   end
 end

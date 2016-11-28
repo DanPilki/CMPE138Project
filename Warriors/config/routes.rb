@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
   get 'welcome/home'
-  get 'welcome/sc'
+  get 'players/sc'
 
   root 'welcome#home'
 
