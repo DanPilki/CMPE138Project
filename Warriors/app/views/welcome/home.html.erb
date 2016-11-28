@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<!DOCTYPE html>
+>>>>>>> 7987ae34d3b67f4b57e5bca273e6e701390fbe79
 <html lang="en">
 <head>
   <title>CMPE138 Project</title>
@@ -145,21 +149,40 @@
         if (this.hash !== ""){
           // Prevent default anchor click behavior
           event.preventDefault();
+<<<<<<< HEAD
           // Store hash
           var hash = this.hash;
+=======
+
+          // Store hash
+          var hash = this.hash;
+
+>>>>>>> 7987ae34d3b67f4b57e5bca273e6e701390fbe79
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 900, function(){
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7987ae34d3b67f4b57e5bca273e6e701390fbe79
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
         } // End if
       });
+<<<<<<< HEAD
       $(window).scroll(function() {
         $(".slideanim").each(function(){
           var pos = $(this).offset().top;
+=======
+
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+>>>>>>> 7987ae34d3b67f4b57e5bca273e6e701390fbe79
           var winTop = $(window).scrollTop();
           if (pos < winTop + 600) {
             $(this).addClass("slide");
@@ -170,4 +193,8 @@
   </script>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 7987ae34d3b67f4b57e5bca273e6e701390fbe79
