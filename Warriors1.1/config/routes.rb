@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sc/index'
+
   get 'welcome/home'
   get 'players/sc'
   get 'players/andersonvarejao'

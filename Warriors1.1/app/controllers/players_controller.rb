@@ -29,4 +29,9 @@ class PlayersController < ApplicationController
   end
   def zaza
   end
+	def index
+	@Players = Players.all
+	end
 end
+
+
