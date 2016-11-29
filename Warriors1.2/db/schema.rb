@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161129183612) do
+ActiveRecord::Schema.define(version: 20161129191919) do
 
   create_table "games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "home_away"
@@ -41,6 +41,15 @@ ActiveRecord::Schema.define(version: 20161129183612) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "playerplays", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer  "players_id"
+    t.integer  "games_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["games_id"], name: "index_playerplays_on_games_id", using: :btree
+    t.index ["players_id"], name: "index_playerplays_on_players_id", using: :btree
+  end
+
   create_table "players", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "F_name"
     t.string   "L_name"
@@ -51,15 +60,6 @@ ActiveRecord::Schema.define(version: 20161129183612) do
     t.string   "player_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "players_plays", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.integer  "players_id"
-    t.integer  "games_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["games_id"], name: "index_players_plays_on_games_id", using: :btree
-    t.index ["players_id"], name: "index_players_plays_on_players_id", using: :btree
   end
 
   create_table "stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
@@ -83,8 +83,8 @@ ActiveRecord::Schema.define(version: 20161129183612) do
 
   add_foreign_key "opp_team_games", "games", column: "games_id"
   add_foreign_key "opp_team_games", "opp_teams", column: "opp_teams_id"
-  add_foreign_key "players_plays", "games", column: "games_id"
-  add_foreign_key "players_plays", "players", column: "players_id"
+  add_foreign_key "playerplays", "games", column: "games_id"
+  add_foreign_key "playerplays", "players", column: "players_id"
   add_foreign_key "stats", "games", column: "games_id"
   add_foreign_key "stats", "players", column: "players_id"
 end

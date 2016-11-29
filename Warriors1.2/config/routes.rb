@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :playerplays
   resources :stats
   resources :opp_team_games
-  resources :players_plays
   resources :games
   resources :players
   resources :opp_teams
