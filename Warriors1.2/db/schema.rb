@@ -10,6 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20161129075136) do
+
+  create_table "teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "Team Name",  limit: 50, null: false
+    t.string   "Home Town",  limit: 15, null: false
+    t.string   "Coach",      limit: 30, null: false
+    t.string   "Owner",      limit: 15, null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
 
 end
