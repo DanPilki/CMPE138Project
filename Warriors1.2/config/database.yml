@@ -13,8 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password: showmethemoney1
+  username: dan
+  password: cmpe138
+  host: 71.198.204.74
   database: Warriors1_2_development
   host: localhost
   socket: /var/run/mysqld/mysqld.sock
