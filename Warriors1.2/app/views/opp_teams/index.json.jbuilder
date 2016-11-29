@@ -1,0 +1,1 @@
+json.array! @opp_teams, partial: 'opp_teams/opp_team', as: :opp_team

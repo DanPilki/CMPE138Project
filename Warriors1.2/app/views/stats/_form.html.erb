@@ -1,0 +1,67 @@
+<%= form_for(stat) do |f| %>
+  <% if stat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stat.errors.count, "error") %> prohibited this stat from being saved:</h2>
+
+      <ul>
+      <% stat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :3pt_M %>
+    <%= f.number_field :3pt_M %>
+  </div>
+
+  <div class="field">
+    <%= f.label :3pt_A %>
+    <%= f.number_field :3pt_A %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rebound %>
+    <%= f.number_field :rebound %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assist %>
+    <%= f.number_field :assist %>
+  </div>
+
+  <div class="field">
+    <%= f.label :block %>
+    <%= f.number_field :block %>
+  </div>
+
+  <div class="field">
+    <%= f.label :steal %>
+    <%= f.number_field :steal %>
+  </div>
+
+  <div class="field">
+    <%= f.label :foul %>
+    <%= f.number_field :foul %>
+  </div>
+
+  <div class="field">
+    <%= f.label :points %>
+    <%= f.text_field :points %>
+  </div>
+
+  <div class="field">
+    <%= f.label :players_id %>
+    <%= f.text_field :players_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :games_id %>
+    <%= f.text_field :games_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

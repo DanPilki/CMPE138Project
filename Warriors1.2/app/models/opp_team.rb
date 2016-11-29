@@ -1,0 +1,2 @@
+class OppTeam < ApplicationRecord
+end

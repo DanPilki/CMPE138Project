@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  3pt_M: 1
+  3pt_A: 1
+  rebound: 1
+  assist: 1
+  block: 1
+  steal: 1
+  foul: 1
+  points: 
+  players: one
+  games: one
+
+two:
+  3pt_M: 1
+  3pt_A: 1
+  rebound: 1
+  assist: 1
+  block: 1
+  steal: 1
+  foul: 1
+  points: 
+  players: two
+  games: two

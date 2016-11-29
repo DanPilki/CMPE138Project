@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-11-29
+  location: MyString
+  results: MyString
+  score: MyString
+  w-l_stats: MyString
+
+two:
+  date: 2016-11-29
+  location: MyString
+  results: MyString
+  score: MyString
+  w-l_stats: MyString

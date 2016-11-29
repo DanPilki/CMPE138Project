@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Opp Teams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Home</th>
+      <th>Coach</th>
+      <th>Owner</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @opp_teams.each do |opp_team| %>
+      <tr>
+        <td><%= opp_team.name %></td>
+        <td><%= opp_team.home %></td>
+        <td><%= opp_team.coach %></td>
+        <td><%= opp_team.owner %></td>
+        <td><%= link_to 'Show', opp_team %></td>
+        <td><%= link_to 'Edit', edit_opp_team_path(opp_team) %></td>
+        <td><%= link_to 'Destroy', opp_team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Opp Team', new_opp_team_path %>

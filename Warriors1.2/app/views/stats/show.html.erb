@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>3pt m:</strong>
+  <%= @stat.3pt_M %>
+</p>
+
+<p>
+  <strong>3pt a:</strong>
+  <%= @stat.3pt_A %>
+</p>
+
+<p>
+  <strong>Rebound:</strong>
+  <%= @stat.rebound %>
+</p>
+
+<p>
+  <strong>Assist:</strong>
+  <%= @stat.assist %>
+</p>
+
+<p>
+  <strong>Block:</strong>
+  <%= @stat.block %>
+</p>
+
+<p>
+  <strong>Steal:</strong>
+  <%= @stat.steal %>
+</p>
+
+<p>
+  <strong>Foul:</strong>
+  <%= @stat.foul %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @stat.points %>
+</p>
+
+<p>
+  <strong>Players:</strong>
+  <%= @stat.players %>
+</p>
+
+<p>
+  <strong>Games:</strong>
+  <%= @stat.games %>
+</p>
+
+<%= link_to 'Edit', edit_stat_path(@stat) %> |
+<%= link_to 'Back', stats_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  F_name: MyString
+  L_name: MyString
+  DoB: 2016-11-29
+  Height: MyString
+  Weight: MyString
+  Position: MyString
+
+two:
+  F_name: MyString
+  L_name: MyString
+  DoB: 2016-11-29
+  Height: MyString
+  Weight: MyString
+  Position: MyString
