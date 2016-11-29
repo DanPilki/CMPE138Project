@@ -1,5 +1,11 @@
 <table>
 	<tr>
-		<th>First Name</th>
+	  <th>First Name</th>
+	  results = client.query("SELECT * from Players")
+
+	  results.each do |result|
+	  puts result["name"]
+	  end
+	  
 	<tr>
 </table>
