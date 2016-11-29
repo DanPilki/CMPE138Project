@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161112040414) do
+ActiveRecord::Schema.define(version: 20161128231040) do
 
   create_table "Game", primary_key: "Game_id", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "Date",      limit: 10
