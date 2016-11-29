@@ -3,15 +3,17 @@
 one:
   F_name: MyString
   L_name: MyString
-  DoB: 2016-11-29
-  Height: MyString
-  Weight: MyString
-  Position: MyString
+  DOB: 2016-11-29
+  weight: MyString
+  height: MyString
+  position: MyString
+  player_id: 1
 
 two:
   F_name: MyString
   L_name: MyString
-  DoB: 2016-11-29
-  Height: MyString
-  Weight: MyString
-  Position: MyString
+  DOB: 2016-11-29
+  weight: MyString
+  height: MyString
+  position: MyString
+  player_id: 1

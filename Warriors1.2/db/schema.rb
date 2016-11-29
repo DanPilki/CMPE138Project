@@ -10,16 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161129093815) do
+ActiveRecord::Schema.define(version: 20161129183612) do
 
   create_table "games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.date     "date"
-    t.string   "location"
+    t.string   "home_away"
+    t.date     "occasion"
     t.string   "results"
     t.string   "score"
-    t.string   "win_lose_stats"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string   "opponents"
+    t.string   "win_lose_stat"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "opp_team_games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer  "opp_teams_id"
+    t.integer  "games_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["games_id"], name: "index_opp_team_games_on_games_id", using: :btree
+    t.index ["opp_teams_id"], name: "index_opp_team_games_on_opp_teams_id", using: :btree
   end
 
   create_table "opp_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
@@ -34,40 +44,47 @@ ActiveRecord::Schema.define(version: 20161129093815) do
   create_table "players", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "F_name"
     t.string   "L_name"
-    t.date     "DoB"
-    t.string   "Height"
-    t.string   "Weight"
-    t.string   "Position"
+    t.date     "DOB"
+    t.string   "weight"
+    t.string   "height"
+    t.string   "position"
+    t.string   "player_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.integer  "threept_M"
-    t.integer  "threept_A"
-    t.integer  "rebound"
-    t.integer  "assist"
-    t.integer  "block"
-    t.integer  "steal"
-    t.integer  "foul"
-    t.integer  "points"
+  create_table "players_plays", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.integer  "players_id"
     t.integer  "games_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["games_id"], name: "index_players_plays_on_games_id", using: :btree
+    t.index ["players_id"], name: "index_players_plays_on_players_id", using: :btree
+  end
+
+  create_table "stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer  "rebounds"
+    t.integer  "assists"
+    t.integer  "fouls"
+    t.integer  "points"
+    t.string   "threept_stat"
+    t.string   "freethrowstat"
+    t.string   "feildgoal_stat"
+    t.integer  "steals"
+    t.integer  "blocks"
+    t.integer  "turnovers"
+    t.integer  "games_id"
+    t.integer  "players_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.index ["games_id"], name: "index_stats_on_games_id", using: :btree
     t.index ["players_id"], name: "index_stats_on_players_id", using: :btree
   end
 
-  create_table "teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.string   "name"
-    t.string   "home"
-    t.string   "coach"
-    t.string   "owner"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
+  add_foreign_key "opp_team_games", "games", column: "games_id"
+  add_foreign_key "opp_team_games", "opp_teams", column: "opp_teams_id"
+  add_foreign_key "players_plays", "games", column: "games_id"
+  add_foreign_key "players_plays", "players", column: "players_id"
   add_foreign_key "stats", "games", column: "games_id"
   add_foreign_key "stats", "players", column: "players_id"
 end

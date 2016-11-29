@@ -17,7 +17,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create player" do
     assert_difference('Player.count') do
-      post players_url, params: { player: { DoB: @player.DoB, F_name: @player.F_name, Height: @player.Height, L_name: @player.L_name, Position: @player.Position, Weight: @player.Weight } }
+      post players_url, params: { player: { DOB: @player.DOB, F_name: @player.F_name, L_name: @player.L_name, height: @player.height, player_id: @player.player_id, position: @player.position, weight: @player.weight } }
     end
 
     assert_redirected_to player_url(Player.last)
@@ -34,7 +34,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update player" do
-    patch player_url(@player), params: { player: { DoB: @player.DoB, F_name: @player.F_name, Height: @player.Height, L_name: @player.L_name, Position: @player.Position, Weight: @player.Weight } }
+    patch player_url(@player), params: { player: { DOB: @player.DOB, F_name: @player.F_name, L_name: @player.L_name, height: @player.height, player_id: @player.player_id, position: @player.position, weight: @player.weight } }
     assert_redirected_to player_url(@player)
   end
 

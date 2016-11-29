@@ -12,13 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :date %>
-    <%= f.date_select :date %>
+    <%= f.label :home_away %>
+    <%= f.text_field :home_away %>
   </div>
 
   <div class="field">
-    <%= f.label :location %>
-    <%= f.text_field :location %>
+    <%= f.label :occasion %>
+    <%= f.date_select :occasion %>
   </div>
 
   <div class="field">
@@ -32,8 +32,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :w-l_stats %>
-    <%= f.text_field :w-l_stats %>
+    <%= f.label :opponents %>
+    <%= f.text_field :opponents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :win_lose_stat %>
+    <%= f.text_field :win_lose_stat %>
   </div>
 
   <div class="actions">

@@ -1,38 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>3pt m:</strong>
-  <%= @stat.3pt_M %>
+  <strong>Rebounds:</strong>
+  <%= @stat.rebounds %>
 </p>
 
 <p>
-  <strong>3pt a:</strong>
-  <%= @stat.3pt_A %>
+  <strong>Assists:</strong>
+  <%= @stat.assists %>
 </p>
 
 <p>
-  <strong>Rebound:</strong>
-  <%= @stat.rebound %>
-</p>
-
-<p>
-  <strong>Assist:</strong>
-  <%= @stat.assist %>
-</p>
-
-<p>
-  <strong>Block:</strong>
-  <%= @stat.block %>
-</p>
-
-<p>
-  <strong>Steal:</strong>
-  <%= @stat.steal %>
-</p>
-
-<p>
-  <strong>Foul:</strong>
-  <%= @stat.foul %>
+  <strong>Fouls:</strong>
+  <%= @stat.fouls %>
 </p>
 
 <p>
@@ -41,13 +21,43 @@
 </p>
 
 <p>
-  <strong>Players:</strong>
-  <%= @stat.players %>
+  <strong>Threept stat:</strong>
+  <%= @stat.threept_stat %>
+</p>
+
+<p>
+  <strong>Freethrowstat:</strong>
+  <%= @stat.freethrowstat %>
+</p>
+
+<p>
+  <strong>Feildgoal stat:</strong>
+  <%= @stat.feildgoal_stat %>
+</p>
+
+<p>
+  <strong>Steals:</strong>
+  <%= @stat.steals %>
+</p>
+
+<p>
+  <strong>Blocks:</strong>
+  <%= @stat.blocks %>
+</p>
+
+<p>
+  <strong>Turnovers:</strong>
+  <%= @stat.turnovers %>
 </p>
 
 <p>
   <strong>Games:</strong>
   <%= @stat.games %>
+</p>
+
+<p>
+  <strong>Players:</strong>
+  <%= @stat.players %>
 </p>
 
 <%= link_to 'Edit', edit_stat_path(@stat) %> |

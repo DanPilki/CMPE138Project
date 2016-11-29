@@ -22,23 +22,28 @@
   </div>
 
   <div class="field">
-    <%= f.label :DoB %>
-    <%= f.date_select :DoB %>
+    <%= f.label :DOB %>
+    <%= f.date_select :DOB, :start_year => 1970, :end_year => 2020 %>
   </div>
 
   <div class="field">
-    <%= f.label :Height %>
-    <%= f.text_field :Height %>
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
   </div>
 
   <div class="field">
-    <%= f.label :Weight %>
-    <%= f.text_field :Weight %>
+    <%= f.label :height %>
+    <%= f.text_field :height %>
   </div>
 
   <div class="field">
-    <%= f.label :Position %>
-    <%= f.text_field :Position %>
+    <%= f.label :position %>
+    <%= f.text_field :position %>
+  </div>
+
+  <div class="field">
+    <%= f.label :player_id %>
+    <%= f.number_field :player_id %>
   </div>
 
   <div class="actions">

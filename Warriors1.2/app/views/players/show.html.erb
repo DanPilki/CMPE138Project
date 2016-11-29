@@ -12,22 +12,27 @@
 
 <p>
   <strong>Dob:</strong>
-  <%= @player.DoB %>
-</p>
-
-<p>
-  <strong>Height:</strong>
-  <%= @player.Height %>
+  <%= @player.DOB %>
 </p>
 
 <p>
   <strong>Weight:</strong>
-  <%= @player.Weight %>
+  <%= @player.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @player.height %>
 </p>
 
 <p>
   <strong>Position:</strong>
-  <%= @player.Position %>
+  <%= @player.position %>
+</p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @player.player_id %>
 </p>
 
 <%= link_to 'Edit', edit_player_path(@player) %> |

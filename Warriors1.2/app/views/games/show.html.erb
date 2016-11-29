@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Date:</strong>
-  <%= @game.date %>
+  <strong>Home away:</strong>
+  <%= @game.home_away %>
 </p>
 
 <p>
-  <strong>Location:</strong>
-  <%= @game.location %>
+  <strong>Occasion:</strong>
+  <%= @game.occasion %>
 </p>
 
 <p>
@@ -21,8 +21,13 @@
 </p>
 
 <p>
-  <strong>W-l stats:</strong>
-  <%= @game.w-l_stats %>
+  <strong>Opponents:</strong>
+  <%= @game.opponents %>
+</p>
+
+<p>
+  <strong>Win lose stat:</strong>
+  <%= @game.win_lose_stat %>
 </p>
 
 <%= link_to 'Edit', edit_game_path(@game) %> |

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Opp teams:</strong>
+  <%= @opp_team_game.opp_teams %>
+</p>
+
+<p>
+  <strong>Games:</strong>
+  <%= @opp_team_game.games %>
+</p>
+
+<%= link_to 'Edit', edit_opp_team_game_path(@opp_team_game) %> |
+<%= link_to 'Back', opp_team_games_path %>

@@ -1,15 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 2016-11-29
-  location: MyString
+  home_away: MyString
+  occasion: 2016-11-29
   results: MyString
   score: MyString
-  w-l_stats: MyString
+  opponents: MyString
+  win_lose_stat: MyString
 
 two:
-  date: 2016-11-29
-  location: MyString
+  home_away: MyString
+  occasion: 2016-11-29
   results: MyString
   score: MyString
-  w-l_stats: MyString
+  opponents: MyString
+  win_lose_stat: MyString

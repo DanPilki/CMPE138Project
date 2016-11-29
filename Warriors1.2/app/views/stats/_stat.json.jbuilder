@@ -1,2 +1,2 @@
-json.extract! stat, :id, :3pt_M, :3pt_A, :rebound, :assist, :block, :steal, :foul, :points, :players_id, :games_id, :created_at, :updated_at
+json.extract! stat, :id, :rebounds, :assists, :fouls, :points, :threept_stat, :freethrowstat, :feildgoal_stat, :steals, :blocks, :turnovers, :games_id, :players_id, :created_at, :updated_at
 json.url stat_url(stat, format: :json)

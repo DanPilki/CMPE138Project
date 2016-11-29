@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  opp_teams: one
+  games: one
+
+two:
+  opp_teams: two
+  games: two

@@ -8,9 +8,10 @@
       <th>F name</th>
       <th>L name</th>
       <th>Dob</th>
-      <th>Height</th>
       <th>Weight</th>
+      <th>Height</th>
       <th>Position</th>
+      <th>Player</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,10 +21,11 @@
       <tr>
         <td><%= player.F_name %></td>
         <td><%= player.L_name %></td>
-        <td><%= player.DoB %></td>
-        <td><%= player.Height %></td>
-        <td><%= player.Weight %></td>
-        <td><%= player.Position %></td>
+        <td><%= player.DOB %></td>
+        <td><%= player.weight %></td>
+        <td><%= player.height %></td>
+        <td><%= player.position %></td>
+        <td><%= player.player_id %></td>
         <td><%= link_to 'Show', player %></td>
         <td><%= link_to 'Edit', edit_player_path(player) %></td>
         <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
