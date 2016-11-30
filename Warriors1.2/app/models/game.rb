@@ -1,4 +1,4 @@
 class Game < ApplicationRecord
-has_many :stats
-has_and_belongs_to_many :players
+	has_many :player_plays
+	has_many :players, :through => :player_plays
 end

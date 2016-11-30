@@ -3,9 +3,7 @@
 one:
   players: one
   games: one
-  name: MyString
 
 two:
   players: two
   games: two
-  name: MyString

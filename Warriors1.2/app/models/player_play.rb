@@ -1,6 +1,6 @@
 class PlayerPlay < ApplicationRecord
-  belongs_to :players
-  belongs_to :games
-	
-  has_many :games
+	has_and_belongs_to_many :players
+	has_and_belongs_to_many :games
+
+	has_many :player_plays
 end

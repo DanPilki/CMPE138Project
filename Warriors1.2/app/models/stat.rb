@@ -1,4 +1,6 @@
 class Stat < ApplicationRecord
-  belongs_to :games
-  belongs_to :players
+  has_many :games
+  has_many :players
+
+	has_many :stats
 end
