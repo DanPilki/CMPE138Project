@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161130034511) do
+ActiveRecord::Schema.define(version: 20161130063025) do
 
   create_table "games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "home_away"
@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(version: 20161130034511) do
     t.string   "win_lose_stat"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "logins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "username"
+    t.string   "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "opp_team_games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
@@ -63,23 +70,20 @@ ActiveRecord::Schema.define(version: 20161130034511) do
   end
 
   create_table "stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.integer  "point"
-    t.integer  "assist"
+    t.integer  "games_id",   null: false
     t.integer  "rebound"
+    t.integer  "assist"
+    t.integer  "block"
     t.integer  "steal"
     t.integer  "foul"
-    t.integer  "players_id"
-    t.integer  "games_id"
+    t.integer  "point"
+    t.integer  "players_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["games_id"], name: "index_stats_on_games_id", using: :btree
-    t.index ["players_id"], name: "index_stats_on_players_id", using: :btree
   end
 
   add_foreign_key "opp_team_games", "games", column: "games_id"
   add_foreign_key "opp_team_games", "opp_teams", column: "opp_teams_id"
   add_foreign_key "player_plays", "games", column: "games_id"
   add_foreign_key "player_plays", "players", column: "players_id"
-  add_foreign_key "stats", "games", column: "games_id"
-  add_foreign_key "stats", "players", column: "players_id"
 end
