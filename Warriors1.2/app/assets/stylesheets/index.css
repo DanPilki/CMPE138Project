@@ -116,6 +116,13 @@ h2{
 
 #e1{
     height: 75px;
+    margin-left: 33%;
+    margin-top: -100px;
+
+}
+#e2{
+    margin-top: -100px;
+}
 }
 
 .slideanim {visibility:hidden;}
@@ -148,7 +155,9 @@ h2{
 }
 
 .d1:hover{
+    background-color: white;
     opacity: 0.5;
+
 }
 
 
