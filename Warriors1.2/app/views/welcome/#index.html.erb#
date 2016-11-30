@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CMPE138 Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <%= stylesheet_link_tag "index" %>
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">Go Dubs!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#players">PLAYERS</a></li>
+          <li><a href="#games">GAMES</a></li>
+          <li><a href="login/name">LOGIN</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 id="gsw">Golden State Warriors</h1>
+    <br>
+    <p id="oak">Oakland, California</p>
+  </div>
+
+
+  <div class="container-fluid text-center" id="players">
+    <h2 style= "margin-bottom: 75px">Players</h2>
+
+    <div class="row">
+      <div class="col-sm-4" id= "c1">
+        <a href="players/12" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png&w=350&h=254" alt = "Stephen Curry">
+          <p>Stephen Curry</p>
+        </a>
+      </div>
+      <div class="col-sm-4" id= "c2">
+        <a href="players/6" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6475.png&w=350&h=254" alt = "Klay Thompson"><p>Klay Thompson</p></a>
+      </div>
+      <div class="col-sm-4" id= "c3">
+        <a href="players/14" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254" alt = "Kevin Durant"><p>Kevin Durant</p></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" id= "c4">
+        <a href="players/10" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6589.png&w=350&h=254" alt ="Draymond Green"><p>Draymond Green</p></a>
+      </div>
+      <div class="col-sm-4" id= "c5">
+        <a href="players/11" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2016.png&w=350&h=254" alt = "Zaza"><p>Zaza</p></a>
+      </div>
+      <div class="col-sm-4" id= "c6">
+        <a href="players/5" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2386.png&w=350&h=254" alt = "Iggy"><p>Iggy</p></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" id= "c7">
+        <a href="players/9" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2489785.png&w=350&h=254" alt = "Ian
+        Clark"><p>Ian Clark</p></a>
+      </div>
+      <div class="col-sm-4" id= "c8">
+        <a href="players/15" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3064559.png&w=350&h=254" alt ="Damian Jones"><p>Damian Jones</p></a>
+      </div>
+      <div class="col-sm-4" id= "c9">
+        <a href="players/13" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2393.png&w=350&h=254" alt ="Shaun Livingston"><p>Shaun Livingston</p></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" id= "c10">
+        <a href="players/4" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3155535.png&w=350&h=254" alt ="Kevon Looney"><p>Kevon Looney</p></a>
+      </div>
+      <div class="col-sm-4" id= "c11">
+        <a href="players/8" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2594818.png&w=350&h=254" alt ="McAdoo"><p>James McAdoo</p></a>
+      </div>
+      <div class="col-sm-4" id= "c12">
+        <a href="players/1" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3137730.png&w=350&h=254" alt ="Patrick McCaw"><p>Patrick McCaw</p></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" id= "c13">
+        <a href="players/2" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3452.png&w=350&h=254" alt ="JaVale McGee"><p>JaVale McGee</p></a>
+      </div>
+      <div class="col-sm-4" id= "c14">
+        <a href="players/7" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2419.png&w=350&h=254" alt ="Anderson Varejao"><p>Anderson Varejao</p></a>
+      </div>
+      <div class="col-sm-4" id= "c15">
+        <a href="players/3" class="d1"><img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2177.png&w=350&h=254" alt ="David West"><p>David West</p></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid text-center bg-grey" id="games">
+    <h2 style= "margin-bottom: 75px">Games</h2>
+	    <div class="row">
+		    <div class="col-sm-4">
+		      <a href="games/1"><h4>Game 1</h4>
+		      <p>vs. San Antonio Spurs</p></a>
+		    </div>
+		    <div class="col-sm-4">
+		      
+		      <a href="games/2"><h4>Game 2</h4>
+		      <p>vs. New Orleans Pelicans</p></a>
+		    </div>
+		    <div class="col-sm-4">
+		      
+		      <a href="games/3"><h4>Game 3</h4>
+		      <p>vs. Phoenix Suns</p></a>
+		    </div>
+	    </div>
+	  <div class="row">
+	    <div class="col-sm-4">
+	      
+	     <a href="games/4"><h4>Game 4</h4>
+	      <p>vs. Portland Trailblazers</p></a>
+	    </div>
+	    <div class="col-sm-4">
+	      
+	      <a href="games/5"><h4>Game 5</h4>
+	      <p>vs. OKC Thunder</p></a>
+	    </div>
+	    <div class="col-sm-4">
+	      
+	      <a href="games/6"><h4>Game 6</h4>
+	      <p>vs. Los Angeles Lakers</p></a>
+	    </div>
+	  </div>
+
+	  <div class="row">
+	    <div class="col-sm-4">
+	      
+	      <a href="games/7"><h4>Game 7</h4>
+	      <p>vs. New Orleans Pelicans</p></a>
+	    </div>
+	    <div class="col-sm-4">
+	      
+	      <a href="games/8"><h4>Game 8</h4>
+	      <p>vs. Dallas Mavericks</p></a>
+	    </div>
+	    <div class="col-sm-4">
+	      
+	      <a href="games/9"><h4>Game 9</h4>
+	      <p>vs. Denver Nuggets</p></a>
+	    </div>
+	  </div>
+
+	<div class="row">
+	    <div class="col-sm-4" id= "e1">
+	      
+	      <a href="games/10"><h4>Game 10</h4>
+	      <p>vs. Phoenix Suns</p></a>
+	    </div>
+    	
+  	</div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <a href="#home" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Made by Phi Nguyen, Dan Pilkington, Daniel Soto & Previn Wong </p>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#home']").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== ""){
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+  </script>
+
+</body>
+</html>
+
+
+
