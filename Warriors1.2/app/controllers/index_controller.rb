@@ -1,5 +1,5 @@
 class IndexController < ApplicationController
-	dex index
+	def index
 	end
 
 end

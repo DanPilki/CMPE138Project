@@ -15,6 +15,7 @@ class LoginsController < ApplicationController
   # GET /logins/new
   def new
     @login = Login.new
+    
   end
 
   # GET /logins/1/edit
