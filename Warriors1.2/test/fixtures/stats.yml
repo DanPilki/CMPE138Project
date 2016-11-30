@@ -1,29 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  rebounds: 1
-  assists: 1
-  fouls: 1
-  points: 1
-  threept_stat: MyString
-  freethrowstat: MyString
-  feildgoal_stat: MyString
-  steals: 1
-  blocks: 1
-  turnovers: 1
-  games: one
+  point: 1
+  assist: 1
+  rebound: 1
+  steal: 1
+  foul: 1
   players: one
+  games: one
 
 two:
-  rebounds: 1
-  assists: 1
-  fouls: 1
-  points: 1
-  threept_stat: MyString
-  freethrowstat: MyString
-  feildgoal_stat: MyString
-  steals: 1
-  blocks: 1
-  turnovers: 1
-  games: two
+  point: 1
+  assist: 1
+  rebound: 1
+  steal: 1
+  foul: 1
   players: two
+  games: two

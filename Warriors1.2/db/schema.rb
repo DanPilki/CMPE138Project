@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161129233236) do
+ActiveRecord::Schema.define(version: 20161130034511) do
 
   create_table "games", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "home_away"
@@ -63,20 +63,15 @@ ActiveRecord::Schema.define(version: 20161129233236) do
   end
 
   create_table "stats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.integer  "rebounds"
-    t.integer  "assists"
-    t.integer  "fouls"
-    t.integer  "points"
-    t.string   "threept_stat"
-    t.string   "freethrowstat"
-    t.string   "feildgoal_stat"
-    t.integer  "steals"
-    t.integer  "blocks"
-    t.integer  "turnovers"
-    t.integer  "games_id"
+    t.integer  "point"
+    t.integer  "assist"
+    t.integer  "rebound"
+    t.integer  "steal"
+    t.integer  "foul"
     t.integer  "players_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.integer  "games_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["games_id"], name: "index_stats_on_games_id", using: :btree
     t.index ["players_id"], name: "index_stats_on_players_id", using: :btree
   end
